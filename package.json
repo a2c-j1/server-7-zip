@@ -2,7 +2,7 @@
   "name": "server-7-zip",
   "version": "0.1.0",
   "description": "A Model Context Protocol server that compress files using **7-Zip**. ",
-  "private": true,
+  "private": false,
   "type": "module",
   "bin": {
     "server-7-zip": "./build/index.js"
