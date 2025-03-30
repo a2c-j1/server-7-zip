@@ -25,7 +25,7 @@ class SevenZipServer {
   constructor() {
     this.server = new Server(
       {
-        name: '7zip-mcp',
+        name: 'server-7-zip',
         version: '0.1.0',
       },
       {

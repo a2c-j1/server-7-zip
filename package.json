@@ -1,11 +1,11 @@
 {
-  "name": "7zip-mcp",
+  "name": "server-7-zip",
   "version": "0.1.0",
   "description": "A Model Context Protocol server that compress files using **7-Zip**. ",
   "private": true,
   "type": "module",
   "bin": {
-    "7zip-mcp": "./build/index.js"
+    "server-7-zip": "./build/index.js"
   },
   "files": [
     "build"
