@@ -27,20 +27,30 @@ A Model Context Protocol server that compress files using **7-Zip**.
 To use this server with the Claude Desktop app, add the following configuration to the "mcpServers" section of your `claude_desktop_config.json`:
 
 
-### NPX
+### NPM
+
+
+1. Clone this repository to your local machine.
+2. Navigate to the cloned directory in your terminal.
+3. Install the required dependencies and build the project using npm:
+
+```sh
+npm install
+npm run build
+```
+
+4. Add the following configuration to the "mcpServers" section of your `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
-    "7-zip": {
-      "command": "npx",
-      "args": [
-        "@a2c-j1/server-7-zip"
-      ],
+    "7zip": {
+      "command": "node",
+      "args": ["/path/to/server-7-zip/build/index.js"],
       "env": {
         "7ZIP_PATH": "/path/to/7z"
       }
-    }
+    },
   }
 }
 
